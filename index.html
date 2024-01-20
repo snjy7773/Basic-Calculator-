@@ -7,36 +7,36 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <h1 id="h1">MY Calculator</h1>
-    
     <div id="md">
       <div id="in1">
-        <input  id="int" type="text" disabled  />
+        <h1 id="h1">MY Calculator</h1>
+        <input id="int" type="text" readonly />
+        <!-- <input  id="int" type="text"  disabled /> -->
       </div>
-      <div id="d1">
-        <button onclick="btnsvl(7)">7</button>
-        <button onclick="btnsvl(8)">8</button>
-        <button onclick="btnsvl(9)">9</button>
-        <button onclick="btnsvl('+')">+</button>
-      </div>
-      <div id="d2">
-        <button onclick="btnsvl(4)">4</button>
-        <button onclick="btnsvl(5)">5</button>
-        <button onclick="btnsvl(6)">6</button>
-        <button onclick="btnsvl('-')">-</button>
-      </div>
-      <div id="d3">
-        <button onclick="btnsvl(1)">1</button>
-        <button onclick="btnsvl(2)">2</button>
-        <button onclick="btnsvl(3)">3</button>
-        <button onclick="btnsvl('*')">*</button>
-      </div>
-      <div id="d4">
-        <button onclick="clear('')">C</button>
-        <button onclick="btnsvl(0)">0</button>
-        <button>=</button>
-        <button onclick="btnsvl('/')">/</button>
-      </div>
+      <hr />
+      <hr />
+      <hr />
+
+      <button onclick="btnsvl(7)">7</button>
+      <button onclick="btnsvl(8)">8</button>
+      <button onclick="btnsvl(9)">9</button>
+      <button onclick="btnsvl('+')">+</button>
+
+      <button onclick="btnsvl(4)">4</button>
+      <button onclick="btnsvl(5)">5</button>
+      <button onclick="btnsvl(6)">6</button>
+      <button onclick="btnsvl('-')">-</button>
+
+      <button onclick="btnsvl(1)">1</button>
+      <button onclick="btnsvl(2)">2</button>
+      <button onclick="btnsvl(3)">3</button>
+      <button onclick="btnsvl('*')">*</button>
+
+      <button onclick="clean()" style="color: brown">C</button>
+      <button onclick="btnsvl(0)">0</button>
+      <button onclick="calculateResult()">=</button>
+      <button onclick="btnsvl('/')">/</button>
+
     </div>
 
     <script src="main.js"></script>
